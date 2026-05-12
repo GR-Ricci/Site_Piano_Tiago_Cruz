@@ -1,0 +1,194 @@
+/* ========== HEADER COMPLETO ========== */
+.header {
+    background: white;
+    padding: 0rem 2rem;
+    border-bottom: 1px solid #eae0d3;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;  /* esconde qualquer transbordo */
+    box-sizing: border-box;
+}
+
+.logo-container {
+    flex: 0 0 auto;
+    max-width: 30%;  /* limite máximo para a logo */
+}
+
+.logo {
+    line-height: 0;
+}
+
+.logo-img {
+    height: 90px;
+    margin-left: 1rem;
+    width: auto;
+    max-width: 100%;  /* imagem não ultrapassa */
+    display: block;
+    transition: opacity 0.2s ease;
+}
+
+
+
+.logo-link {
+    display: inline-block;
+    line-height: 0;
+    transition: opacity 0.2s ease;
+}
+
+.logo-link:hover {
+    opacity: 0.7;
+
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.nav-links li a {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: #3a2a1f;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+    white-space: nowrap;
+}
+
+.nav-links li a.active {
+    color: #301d59;
+    font-weight: 600;
+}
+
+.nav-links li a:hover {
+    opacity: 0.7;
+}
+
+/* Transição suave para todos os botões */
+.nav-links li a,
+.btn-contato-nav {
+    transition: all 0.2s ease;
+}
+
+/* Efeito de clique (ativa enquanto segura) */
+.nav-links li a:active,
+.btn-contato-nav:active {
+    transform: scale(0.95);
+    opacity: 0.5;
+}
+
+
+
+.btn-container {
+    flex: 0 0 auto;
+    max-width: 20%;  /* limite para o botão */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.divider {
+    width: 1px;
+    height: 25px;
+    background-color: #eae0d3;
+}
+
+
+
+.social-icon {
+    color: white;
+    background: #301d59;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: opacity 0.2s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    opacity: 0.7;
+}
+
+
+.btn-contato-nav {
+    font-family: 'Inter', sans-serif;
+    margin-right: 1rem;
+    background: #301d59;  /* cor do footer */
+    color: white !important;
+    text-decoration: none;
+    padding: 0.6rem 1.5rem;  /* aumenta o tamanho */
+    border-radius: 40px;
+    font-weight: 500;
+    font-size: 0.9rem;  /* aumenta um pouco a fonte se quiser */
+    white-space: nowrap;
+}
+
+.btn-contato-nav:hover {
+    opacity: 0.7;
+}
+
+/* Resolve a barra horizontal globalmente */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+    .header {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .logo-container,
+    .btn-container {
+        max-width: none;
+    }
+
+    .nav-container {
+        max-width: 100%;
+        order: 3;
+        width: 100%;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .logo-img {
+        height: 60px;
+    }
+
+    .nav-links li a {
+        font-size: 0.7rem;
+        white-space: normal;  /* quebra o texto se precisar */
+    }
+
+    .btn-contato-nav {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.7rem;
+    }
+}

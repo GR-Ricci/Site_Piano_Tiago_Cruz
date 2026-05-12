@@ -1,22 +1,91 @@
-.footer {
+/* GARANTE QUE O FOOTER FIQUE SEMPRE EMBAIXO */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--color-primary-dark);
-    padding: var(--spacing-gutter-medium);
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+/* CONTEÚDO PRINCIPAL */
+.main-content {
+    flex: 1;
+}
+
+/* ========== FOOTER COMPACTO ========== */
 .footer {
-    color: var(--color-green);
-    text-decoration: none;
-    transition: all 300ms ease-in-out;
-    filter: brightness(.5);
+    background: #301d59;
+    padding: 1rem 2rem;
+    width: 100%;
+    margin-top: auto;
 }
 
-.footer {
-    filter: brightness(1);
+.footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
 }
 
-.footer .developer {
-    color: var(--color-green);
+.footer-content {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 800px;
+    margin: 0 auto;  /* isso centraliza */
+    text-align: center;  /* centraliza o texto */
+}
+
+.footer-logo {
+    height: 30px;  /* altura que vc quiser */
+    width: auto;
+    display: block;
+    margin: 0 auto;  /* centraliza e dá um respiro pequeno embaixo */
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+    filter: brightness(0) invert(1);  /* deixa branco */
+
+}
+
+
+.footer-bottom {
+    display: block;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .footer {
+        padding: 1rem 1.5rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .footer-text {
+        font-size: 0.75rem;
+        text-align: center;
+    }
 }
