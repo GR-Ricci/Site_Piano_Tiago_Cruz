@@ -8,29 +8,31 @@
     margin-bottom: 3rem;
 }
 
-.main-class-content {
+.main-class-content{
     text-align: left;
+    margin-left: 10rem;
 }
+
 
 .main-class-title {
     font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
     font-weight: 500;
     color: white;
-    text-shadow: 1px 1px 2px rgba(245, 158, 11, 0.8);
 }
-
 
 .main-class-description {
     font-family: 'Inter', sans-serif;
-        font-size: 1rem;
+    font-size: 1rem;
     font-weight: 500;
     color: white;
 }
 
-
 .main-class-btn {
+    display: inline-block;
+
     font-family: 'Inter', sans-serif;
-    align-items: center;
+
     justify-content: center;
     gap: 0.6rem;
     background: white;
