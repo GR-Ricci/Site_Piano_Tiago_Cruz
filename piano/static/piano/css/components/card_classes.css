@@ -1,0 +1,87 @@
+/* ========== MAIN CLASS ========== */
+
+.main-class {
+    background: #f5efe7;
+    padding: 4rem 2rem 13rem 2rem;
+    border-radius: 0;
+    clip-path: ellipse(120% 100% at 70% 0%);
+    margin-bottom: 3rem;
+}
+
+.main-class-content {
+    text-align: left;
+}
+
+.main-class-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(245, 158, 11, 0.8);
+}
+
+
+.main-class-description {
+    font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+
+.main-class-btn {
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    background: white;
+    color: #301d59;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border: 0.2rem solid #301d59;
+    border-radius: 2rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.main-class-btn:hover {
+    background: #301d59;
+    color: white;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(48, 29, 89, 0.3);
+    border-color: #301d59;
+}
+
+/* Ícone de música (fa-music) pode mudar de cor */
+.main-class-btn i {
+    font-size: 0.8rem;
+    padding-left: 0.3rem;
+    transition: all 0.3s ease;
+    color: #301d59;
+}
+
+.main-class-btn:hover i {
+    color: white;
+}
+
+/* Ícone do piano (material-icons) NUNCA muda de cor */
+.main-class-btn .material-icons {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    color: inherit; /* mantém a cor original do ícone */
+}
+
+.main-class-btn:hover .material-icons {
+    transform: scale(1.05);
+    color: inherit; /* continua com a cor original preta e branca */
+}
+
+@media (max-width: 768px) {
+    .main-class {
+        padding: 3rem 1rem 6rem 1rem;
+        clip-path: ellipse(180% 100% at 50% 0%);
+    }
+}
