@@ -1,216 +1,198 @@
 {% load static %}
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preparatório USP - Piano School</title>
-    <meta name="description" content="Preparatório para ingresso na ECA-USP. Parceria oficial com a Universidade de São Paulo.">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <main>
 
-        <!-- ===== HERO SECTION ===== -->
-        <section class="hero">
-            <div class="hero__blob" aria-hidden="true"></div>
-            <div class="container">
-                <div class="hero__grid">
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
+    <div class="hero__blob" aria-hidden="true"></div>
+    <div class="container">
+        <div class="hero__grid">
 
-                    <!-- Coluna da esquerda: texto -->
-                    <div class="hero__content">
-                        <div class="hero__badge">
-                            <span class="hero__badge-icon">🎓</span>
-                            <span>Parceria oficial · ECA-USP</span>
-                        </div>
+            <!-- Coluna da esquerda: texto -->
+            <div class="hero__content">
+                <div class="hero__badge">
+                    <span class="hero__badge-icon">🎓</span>
+                    <span>Parceria oficial · ECA-USP</span>
+                </div>
 
-                        <h1 class="hero__title">
-                            A ponte entre o seu talento e a <span class="hero__title-accent">universidade</span>
-                        </h1>
+                <h1 class="hero__title">
+                    A ponte entre o seu talento e a <span class="hero__title-accent">universidade</span>
+                </h1>
 
-                        <p class="hero__description">
-                            Somos o único instituto de piano particular com parceria formalizada com a
-                            Escola de Comunicações e Artes da USP — isso coloca nosso preparatório a
-                            um nível de precisão que nenhum outro oferece.
-                        </p>
+                <p class="hero__description">
+                    Somos o único instituto de piano particular com parceria formalizada com a
+                    Escola de Comunicações e Artes da USP — isso coloca nosso preparatório a
+                    um nível de precisão que nenhum outro oferece.
+                </p>
 
-                        <a href="https://wa.me/5511998765432?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20preparatório%20USP." 
-                           target="_blank" 
-                           rel="noopener noreferrer" 
-                           class="btn-whatsapp">
-                            <svg viewBox="0 0 24 24" class="btn-whatsapp__icon" aria-hidden="true">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                            </svg>
-                            Quero ingressar na USP
-                        </a>
+                <a href="https://wa.me/5511998765432?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20preparatório%20USP."
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn-whatsapp">
+                    <svg viewBox="0 0 24 24" class="btn-whatsapp__icon" aria-hidden="true">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                    Quero ingressar na USP
+                </a>
+            </div>
+
+            <!-- Coluna da direita: logo + stats -->
+            <div class="hero__visual">
+                <div class="hero__logo-card">
+                    <img src="{% static 'piano/images/aba_usp/aba_usp.png' %}"
+                         alt="USP — Universidade de São Paulo"
+                         class="hero__usp-logo">
+                </div>
+
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">60+</span>
+                        <span class="hero__stat-label">Aprovados</span>
+                        <span class="hero__stat-sub">ECA-USP · UNICAMP · UFSCar</span>
                     </div>
-
-                    <!-- Coluna da direita: logo + stats -->
-                    <div class="hero__visual">
-                        <div class="hero__logo-card">
-                            <img src="{% static 'piano/images/aba_usp/aba_usp.png' %}" 
-                                 alt="USP — Universidade de São Paulo" 
-                                 class="hero__usp-logo">
-                        </div>
-
-                        <div class="hero__stats">
-                            <div class="hero__stat">
-                                <span class="hero__stat-number">60+</span>
-                                <span class="hero__stat-label">Aprovados</span>
-                                <span class="hero__stat-sub">ECA-USP · UNICAMP · UFSCar</span>
-                            </div>
-                            <div class="hero__stat">
-                                <span class="hero__stat-number">94%</span>
-                                <span class="hero__stat-label">Aprovação</span>
-                                <span class="hero__stat-sub">Média histórica</span>
-                            </div>
-                            <div class="hero__stat">
-                                <span class="hero__stat-number">15+</span>
-                                <span class="hero__stat-label">Anos</span>
-                                <span class="hero__stat-sub">De parceria</span>
-                            </div>
-                            <div class="hero__stat">
-                                <span class="hero__stat-number">2010</span>
-                                <span class="hero__stat-label">Início</span>
-                                <span class="hero__stat-sub">Primeiro aprovado</span>
-                            </div>
-                        </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">94%</span>
+                        <span class="hero__stat-label">Aprovação</span>
+                        <span class="hero__stat-sub">Média histórica</span>
                     </div>
-
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">15+</span>
+                        <span class="hero__stat-label">Anos</span>
+                        <span class="hero__stat-sub">De parceria</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">2010</span>
+                        <span class="hero__stat-label">Início</span>
+                        <span class="hero__stat-sub">Primeiro aprovado</span>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <!-- ===== POR QUE FAZ DIFERENÇA ===== -->
-        <section class="benefits">
-            <div class="container">
-                <div class="benefits__header">
-                    <span class="benefits__label">Por que faz diferença</span>
-                    <h2 class="benefits__title">O que a parceria com a USP garante ao seu preparo</h2>
-                </div>
-
-                <div class="benefits__grid">
-                    <article class="benefit-card">
-                        <div class="benefit-card__icon-wrapper">
-                            <!-- Handshake -->
-                        <svg class="benefit-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="m11 17 2 2a1 1 0 1 0 3-3"/>
-                            <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/>
-                            <path d="m21 3 1 11h-2"/>
-                            <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/>
-                            <path d="M3 4h8"/>
-                        </svg>        
-                            
-                        </div>
-                        <h3 class="benefit-card__title">Currículo alinhado ao edital</h3>
-                        <p class="benefit-card__text">Protocolo formal com a ECA-USP sincroniza cada detalhe do preparatório com os critérios reais das provas de habilidade específica.</p>
-                    </article>
-
-                    <article class="benefit-card">
-                        <div class="benefit-card__icon-wrapper">
-                            <!-- BookOpenCheck  -->
-                             <svg class="benefit-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 21V7"/>
-                                <path d="m16 12 2 2 4-4"/>
-                                <path d="M22 6V4a1 1 0 0 0-1-1h-5a4 4 0 0 0-4 4 4 4 0 0 0-4-4H3a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h6a3 3 0 0 1 3 3 3 3 0 0 1 3-3h6a1 1 0 0 0 1-1v-1.3"/>
-                            </svg>
-                        </div>
-                        <h3 class="benefit-card__title">Acesso a eventos da USP</h3>
-                        <p class="benefit-card__text">Alunos do preparatório participam de workshops e masterclasses no campus da ECA-USP, desenvolvendo maturidade artística antes de ingressar.</p>
-                    </article>
-
-                    <article class="benefit-card">
-                        <div class="benefit-card__icon-wrapper">
-            <!-- Card 3: Histórico comprovado - Ícone Troféu (SVG oficial Lucide) -->
-
-        <svg class="benefit-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"/>
-            <path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"/>
-            <path d="M18 9h1.5a1 1 0 0 0 0-5H18"/>
-            <path d="M4 22h16"/>
-            <path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/>
-            <path d="M6 9H4.5a1 1 0 0 1 0-5H6"/>
-        </svg>
+        </div>
     </div>
-            <h3 class="benefit-card__title">Histórico comprovado</h3>
-            <p class="benefit-card__text">Desde 2010, 94% de aprovação nas provas de habilidade específica. Metodologia construída com base nos critérios reais das bancas.</p>
-        </article>
-                        
-                    </article>
+</section>
+
+<!-- ===== POR QUE FAZ DIFERENÇA ===== -->
+<section class="benefits">
+    <div class="container">
+        <div class="benefits__header">
+            <span class="benefits__label">Por que faz diferença</span>
+            <h2 class="benefits__title">O que a parceria com a USP garante ao seu preparo</h2>
+        </div>
+
+        <div class="benefits__grid">
+            <article class="benefit-card">
+                <div class="benefit-card__icon-wrapper">
+                    <!-- Handshake -->
+                <svg class="benefit-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m11 17 2 2a1 1 0 1 0 3-3"/>
+                    <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/>
+                    <path d="m21 3 1 11h-2"/>
+                    <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/>
+                    <path d="M3 4h8"/>
+                </svg>
+
                 </div>
+                <h3 class="benefit-card__title">Currículo alinhado ao edital</h3>
+                <p class="benefit-card__text">Protocolo formal com a ECA-USP sincroniza cada detalhe do preparatório com os critérios reais das provas de habilidade específica.</p>
+            </article>
+
+            <article class="benefit-card">
+                <div class="benefit-card__icon-wrapper">
+                    <!-- BookOpenCheck  -->
+                     <svg class="benefit-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 21V7"/>
+                        <path d="m16 12 2 2 4-4"/>
+                        <path d="M22 6V4a1 1 0 0 0-1-1h-5a4 4 0 0 0-4 4 4 4 0 0 0-4-4H3a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h6a3 3 0 0 1 3 3 3 3 0 0 1 3-3h6a1 1 0 0 0 1-1v-1.3"/>
+                    </svg>
+                </div>
+                <h3 class="benefit-card__title">Acesso a eventos da USP</h3>
+                <p class="benefit-card__text">Alunos do preparatório participam de workshops e masterclasses no campus da ECA-USP, desenvolvendo maturidade artística antes de ingressar.</p>
+            </article>
+
+            <article class="benefit-card">
+                <div class="benefit-card__icon-wrapper">
+    <!-- Card 3: Histórico comprovado - Ícone Troféu (SVG oficial Lucide) -->
+
+<svg class="benefit-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"/>
+    <path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"/>
+    <path d="M18 9h1.5a1 1 0 0 0 0-5H18"/>
+    <path d="M4 22h16"/>
+    <path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/>
+    <path d="M6 9H4.5a1 1 0 0 1 0-5H6"/>
+</svg>
+</div>
+    <h3 class="benefit-card__title">Histórico comprovado</h3>
+    <p class="benefit-card__text">Desde 2010, 94% de aprovação nas provas de habilidade específica. Metodologia construída com base nos critérios reais das bancas.</p>
+</article>
+
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ===== COMO FUNCIONA ===== -->
+<section class="methodology">
+    <div class="container">
+        <div class="methodology__header">
+            <span class="methodology__label">Metodologia</span>
+            <h2 class="methodology__title">Como funciona o preparatório</h2>
+        </div>
+
+        <div class="methodology__grid">
+            <div class="methodology-card">
+                <div class="methodology-card__number">01</div>
+                <h4 class="methodology-card__title">Diagnóstico técnico</h4>
+                <p class="methodology-card__text">Avaliação detalhada do nível atual, pontos fortes e lacunas para estruturar o plano.</p>
             </div>
-        </section>
 
-        <!-- ===== COMO FUNCIONA ===== -->
-        <section class="methodology">
-            <div class="container">
-                <div class="methodology__header">
-                    <span class="methodology__label">Metodologia</span>
-                    <h2 class="methodology__title">Como funciona o preparatório</h2>
-                </div>
-
-                <div class="methodology__grid">
-                    <div class="methodology-card">
-                        <div class="methodology-card__number">01</div>
-                        <h4 class="methodology-card__title">Diagnóstico técnico</h4>
-                        <p class="methodology-card__text">Avaliação detalhada do nível atual, pontos fortes e lacunas para estruturar o plano.</p>
-                    </div>
-
-                    <div class="methodology-card">
-                        <div class="methodology-card__number">02</div>
-                        <h4 class="methodology-card__title">Plano personalizado</h4>
-                        <p class="methodology-card__text">Repertório, teoria e percepção alinhados ao edital da universidade-alvo do aluno.</p>
-                    </div>
-
-                    <div class="methodology-card">
-                        <div class="methodology-card__number">03</div>
-                        <h4 class="methodology-card__title">Simulações de banca</h4>
-                        <p class="methodology-card__text">Ensaios com avaliadores externos para preparar técnica e emocionalmente o candidato.</p>
-                    </div>
-
-                    <div class="methodology-card">
-                        <div class="methodology-card__number">04</div>
-                        <h4 class="methodology-card__title">Aprovação e continuidade</h4>
-                        <p class="methodology-card__text">Suporte na transição para a vida universitária, inclusive durante o 1º semestre.</p>
-                    </div>
-                </div>
+            <div class="methodology-card">
+                <div class="methodology-card__number">02</div>
+                <h4 class="methodology-card__title">Plano personalizado</h4>
+                <p class="methodology-card__text">Repertório, teoria e percepção alinhados ao edital da universidade-alvo do aluno.</p>
             </div>
-        </section>
 
-        <!-- ===== CTA FINAL ===== -->
-        <section class="cta">
-            <div class="container">
-                <div class="cta__content">
-                    <img src="{% static 'piano/images/aba_usp/aba_usp.png' %}" 
-                         alt="USP" 
-                         class="cta__logo">
-
-                    <h2 class="cta__title">O próximo aprovado pode ser você</h2>
-
-                    <p class="cta__text">
-                        Converse com o Prof. Tiago Cruz e descubra como o preparatório pode ser
-                        estruturado para o seu perfil e objetivos.
-                    </p>
-
-                    <a href="https://wa.me/5511998765432?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20preparatório%20USP." 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       class="btn-whatsapp btn-whatsapp--dark">
-                        <svg viewBox="0 0 24 24" class="btn-whatsapp__icon" aria-hidden="true">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                        </svg>
-                        Falar com o professor
-                        <svg class="btn-whatsapp__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                </div>
+            <div class="methodology-card">
+                <div class="methodology-card__number">03</div>
+                <h4 class="methodology-card__title">Simulações de banca</h4>
+                <p class="methodology-card__text">Ensaios com avaliadores externos para preparar técnica e emocionalmente o candidato.</p>
             </div>
-        </section>
 
-    </main>
-</body>
-</html>
+            <div class="methodology-card">
+                <div class="methodology-card__number">04</div>
+                <h4 class="methodology-card__title">Aprovação e continuidade</h4>
+                <p class="methodology-card__text">Suporte na transição para a vida universitária, inclusive durante o 1º semestre.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CTA FINAL ===== -->
+<section class="cta">
+    <div class="container">
+        <div class="cta__content">
+            <img src="{% static 'piano/images/aba_usp/aba_usp.png' %}"
+                 alt="USP"
+                 class="cta__logo">
+
+            <h2 class="cta__title">O próximo aprovado pode ser você</h2>
+
+            <p class="cta__text">
+                Converse com o Prof. Tiago Cruz e descubra como o preparatório pode ser
+                estruturado para o seu perfil e objetivos.
+            </p>
+
+            <a href="https://wa.me/5511998765432?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20preparatório%20USP."
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn-whatsapp btn-whatsapp--dark">
+                <svg viewBox="0 0 24 24" class="btn-whatsapp__icon" aria-hidden="true">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+                Falar com o professor
+                <svg class="btn-whatsapp__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>

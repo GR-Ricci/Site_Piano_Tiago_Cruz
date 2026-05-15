@@ -1,0 +1,35 @@
+/* ===== CTA FINAL ===== */
+.cta {
+    padding: var(--section-padding);
+    background: #ffffff;
+}
+
+.cta__content {
+    max-width: 672px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta__logo {
+    height: 3.5rem;
+    object-fit: contain;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+}
+
+.cta__title {
+    color: var(--purple-mid);
+    font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.cta__text {
+    color: var(--gray-label);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    max-width: 480px;
+}
