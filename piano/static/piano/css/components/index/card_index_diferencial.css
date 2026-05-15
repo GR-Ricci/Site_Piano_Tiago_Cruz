@@ -1,0 +1,63 @@
+/*parte diferenciais*/
+.partediferenciais{
+    padding: 5rem 0;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.partediferenciaiscontainer{
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.partediferenciaisgrid{
+    display: grid;
+    gap: 2.5rem;
+}
+
+.partediferenciaisitem{
+    text-align: center;
+}
+
+.partediferenciaisitem p{
+    color: #7F798C;
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.partediferenciaisitem h4{
+    margin-bottom: 0.75rem;
+    color: #241740;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.partediferenciaisnumero{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    margin-bottom: 1.25rem;
+    background-color: #F2F2F2;
+}
+
+.partediferenciaisnumero span{
+    font-size: 0.75rem;
+    font-weight: 900;
+    color: #301D59;
+}
+
+@media (min-width: 640px){
+    .partediferenciaisgrid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px){
+    .partediferenciaiscontainer{
+        padding: 0 2rem;
+    }
+}

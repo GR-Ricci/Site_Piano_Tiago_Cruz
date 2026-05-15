@@ -42,4 +42,23 @@
     --spacing-gutter-small: 2rem;
     --spacing-gutter-medium: 3rem;
     --spacing-gutter-large: 4rem;
+
+     --purple-deep: #1a0f2e;
+    --purple-mid: #241740;
+    --purple-dark: #301D59;
+    --lavender: #9B8EC4;
+    --lavender-light: rgba(155, 142, 196, 0.12);
+    --lavender-border: rgba(155, 142, 196, 0.3);
+    --text-white: #ffffff;
+    --text-white-muted: rgba(255, 255, 255, 0.55);
+    --text-white-subtle: rgba(255, 255, 255, 0.35);
+    --text-white-card: rgba(255, 255, 255, 0.4);
+    --gray-label: #7F798C;
+    --border-light: #ECEAF2;
+    --bg-light: #FAFAFA;
+    --icon-bg: #F2F2F2;
+    --icon-border: #DEDAE8;
+    --whatsapp-green: #25D366;
+    --container-max: 1280px;
+    --section-padding: 5rem 0;
 }

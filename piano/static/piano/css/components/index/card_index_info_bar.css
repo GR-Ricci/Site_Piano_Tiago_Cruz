@@ -1,0 +1,78 @@
+/*barra com statisticas*/
+
+.EstatiscasBackground{
+    background: #301D59;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: 'Inter', sans-serif;
+}
+
+.Estatisticasbase {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.Estatisticasbase h1, h2{
+    margin: 0;
+}
+
+.EstatisticasGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    align-items: flex-start;
+}
+
+@media (min-width: 1024px) {
+    .EstatisticasGrid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.EstatisticasBox{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+    width: clamp(200px, 21.875%, 280px);
+}
+
+@media (min-width: 640px) {
+    .StatItem {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+.statsicon{
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: rgba(255,255,255,0.1);
+    color: #ffffff;
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.valor{
+    color: white;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1;
+    margin: 0;
+    font-weight: bold;
+}
+
+.etiqueta{
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+    color: rgba(255,255,255,0.55);
+}

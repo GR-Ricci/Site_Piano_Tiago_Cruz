@@ -1,0 +1,143 @@
+/* parte video */
+
+.ParteVideo{
+    background: rgb(242, 242, 242);
+    padding: 1rem 0rem 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.ParteVideoContainer{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.ParteVideoCabecalho{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.ParteVideoCabecalho span{
+    font-family: 'Didot';
+}
+
+.ParteVideoTag {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;           /* aumentou de 0.875rem */
+    font-weight: 800;            /* aumentou de 500 para 800 */
+    letter-spacing: 0.2em;       /* aumentou de 0.15em */
+    text-transform: uppercase;
+    color: #F59E0B;
+    font-family: 'Inter', sans-serif !important;
+}
+
+.ParteVideoTitulo{
+    margin: 0;
+    color: #301D59;
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.ParteVideoCard{
+    max-width: 896px;
+    margin: 0 auto;
+}
+
+.ParteVideoThumbnail{
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.ParteVideoImagem{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.ParteVideoThumbnail:hover .ParteVideoImagem{
+    transform: scale(1.05);
+}
+
+.ParteVideoOverlay{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, #241740 0%, rgba(36,23,64,0.5) 60%, transparent 100%);
+}
+
+.ParteVideoPlayWrapper{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ParteVideoPlayButton{
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid rgba(255,255,255,0.4);
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.ParteVideoPlayButton:hover{
+    transform: scale(1.1);
+}
+
+.ParteVideoInfo{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2rem;
+}
+
+.ParteVideoSubtitulo{
+    margin: 0 0 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 400;  /* normal, nem fino nem negrito */
+    color: #F59E0B;
+    opacity: 1;  /* suaviza a cor */
+}
+
+.ParteVideoVideoTitulo{
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px){
+    .ParteVideo{
+        padding: 2rem 1rem;
+    }
+
+    .ParteVideoInfo{
+        padding: 1.5rem;
+    }
+
+    .ParteVideoPlayButton{
+        width: 4rem;
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+
+    .ParteVideoVideoTitulo{
+        font-size: 1rem;
+    }
+}
