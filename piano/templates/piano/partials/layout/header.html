@@ -1,6 +1,29 @@
-<header class="header">
-    <h1>
+{% load static %}
 
-        Header ON
-    </h1>
+<header class="header">
+    <div class="logo-container">
+        <div class="logo">
+            <a href="/" class="logo-link">
+             <img src="{% static 'piano/images/layout/header/logo.png' %}" alt="Logo" class="logo-img">
+            </a>
+        </div>
+    </div>
+
+
+    <ul class="nav-links">
+        <li><a href="/" class="{% if request.path == '/' %}active{% endif %}">Inicio</a></li>
+        <li><a href="/about/" class="{% if request.path == '/about/' %}active{% endif %}">Instituto</a></li>
+        <li><a href="/classes/" class="{% if request.path == '/classes/' %}active{% endif %}">Cursos</a></li>
+        <li><a href="/usp/" class="{% if request.path == '/usp/' %}active{% endif %}">Parceria USP</a></li>
+        <li><a href="/contact/" class="{% if request.path == '/contact/' %}active{% endif %}">Contato</a></li>
+    </ul>
+
+    <div class="btn-container">
+        <a href="https://www.instagram.com/institutodepiano/" target="_blank"  class="social-icon">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <div class="divider"></div>
+
+        <a href="https://wa.me/5516991711719" target="_blank" class="btn-contato-nav">Falar com o Professor</a>
+    </div>
 </header>

@@ -1,12 +1,160 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 
-    - extra funcionando
+    <link rel="stylesheet" href="{% static 'piano/css/componets/card_index.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    
 </head>
 <body>
+    <section class="BannerIndex">
+        <div class="Bannerimage">
+            <img class="imagemdefundo" src="{% static 'piano/images/classes/main/piano.jpeg' %}" alt="pianofundo   ">   
+            <div class="imageoverlay"></div>
+        </div>
+        <div class="Banner">
+            
+            <div class="BannerText">
+                <span class="instituto">---- Instituto Piano ----</span>
+                <p class="Tiago">TIAGO CRUZ</p>
+                <h1>O caminho mais sólido para <span class="roxo">dominar o piano</span> e ingressar na USP</h1>
+                <div class="bannertextp">
+                    <p>Aulas individuais de piano erudito com parceria oficial com a Universidade de São Paulo. Formação técnica completa — do iniciante ao candidato ao vestibular de música.</p>
+                </div>
+                <div class="BannerButtons">
+                    <a class="BannerZap">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Falar com o professor
+                    </a>
+                    <a class="BannerInst">
+                        Conhecer o Instituto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Estatisticas">
+        <div class="EstatiscasBackground">
+            <div class="EstatisticasGrid">
+            <div class="EstatisticasBox">
+                <div class="statsicon">
+                    <i class="fa-solid fa-user-group"></i>
+                </div>
+                <div class="estatisticasvalor">
+                    <p class="valor">200+</p>
+                    <p class="etiqueta">Alunos formados</p>
+                </div>
+            </div>
+            <div class="EstatisticasBox">
+                <div class="statsicon">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+                <div class="estatisticasvalor">
+                    <p class="valor">94%</p>
+                    <p class="etiqueta">aprovação na USP/UNICAMP</p>
+                </div>
+            </div>
+            <div class="EstatisticasBox">
+                <div class="statsicon">
+                   <i class="fa-solid fa-book-open-reader"></i>
+                </div>
+                <div class="estatisticasvalor">
+                    <p class="valor">18 anos</p>
+                    <p class="etiqueta">de ensino de excelências</p>
+                </div>
+            </div>
+            <div class="EstatisticasBox">
+                <div class="statsicon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="estatisticasvalor">
+                    <p class="valor">60+</p>
+                    <p class="etiqueta">aprovados no vestibular</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="ParteVideo">
+<div class="ParteVideo">
+    <div class="ParteVideoContainer">
+        <div class="ParteVideoCabecalho">
+            <span class="ParteVideoTag">Conheça o instituto</span>
+            <h2 class="ParteVideoTitulo">Veja como são nossas aulas</h2>
+        </div>
+
+        <div class="ParteVideoCard">
+            <div class="ParteVideoThumbnail">
+                <img src="{% static 'piano/images/classes/main/salaopiano.jpg' %}" alt="Apresentação do Instituto" class="ParteVideoImagem">
+
+                <div class="ParteVideoOverlay"></div>
+
+                <div class="ParteVideoPlayWrapper">
+                    <button class="ParteVideoPlayButton">
+                        ▶
+                    </button>
+                </div>
+
+                <div class="ParteVideoInfo">
+                    <p class="ParteVideoSubtitulo">Vídeo de apresentação</p>
+                    <h3 class="ParteVideoVideoTitulo">
+                        Instituto de Piano Tiago Cruz — conheça o espaço e o método
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+<section class="Diferenciais">
+    <div class="partediferenciais">
+        <div class="partediferenciaiscontainer">
+            <div class="partediferenciaisgrid">
+
+                <div class="partediferenciaisitem">
+                    <div class="partediferenciaisnumero">
+                        <span>01</span>
+                    </div>
+
+                    <h4>Ambiente profissional</h4>
+
+                    <p>
+                        Salas acusticamente tratadas com piano de concerto Steinway.
+                    </p>
+                </div>
+
+                <div class="partediferenciaisitem">
+                    <div class="partediferenciaisnumero">
+                        <span>02</span>
+                    </div>
+
+                    <h4>Método individual</h4>
+
+                    <p>
+                        Cada aula é 100% adaptada ao ritmo e aos objetivos do aluno.
+                    </p>
+                </div>
+
+                <div class="partediferenciaisitem">
+                    <div class="partediferenciaisnumero">
+                        <span>03</span>
+                    </div>
+
+                    <h4>Parceria com a USP</h4>
+
+                    <p>
+                        Acesso a workshops, masterclasses e laboratórios da ECA-USP.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
 
 </body>
 </html>

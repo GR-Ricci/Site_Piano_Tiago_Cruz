@@ -1,12 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+{% load static %}
 
-    - extra funcionando
-</head>
-<body>
+<div class="main-class" style="background-image: url('{% static 'piano/images/classes/main/teste.png' %}'); background-size: cover; background-position: center;">
+    <div class="main-class-content">
 
-</body>
-</html>
+        <h1 class="main-class-title">
+            Formação completa em piano erudito
+            <br>
+            <span class="main-class-highlight"> Do iniciante ao vestibular da USP</span>
+        </h1>
+
+        <p class="main-class-description">
+            Preparação completa para o vestibular de música da USP:<br>
+            técnica, repertório, teoria e simulações de prova.<br><br>
+            Tudo isso com o diferencial da parceria oficial do instituto com a USP,<br>
+            incluindo masterclasses e orientação especializada.
+        </p>
+
+        <a href="#" class="main-class-btn">
+           Saiba mais<i class="fas fa-music"></i>
+        </a>
+
+    </div>
+</div>
+
+<section class="general-class">
+    <h2 class="general-title">Outros Programas</h2>
+
+    <div class="general-grid">
+        <div class="general-card">
+            <div class="general-image-placeholder">🎹</div>
+            <h4 class="general-name">Piano para Crianças</h4>
+            <h3 class="general-age">5 a 10 anos</h3>
+            <p class="general-desc">Metodologia lúdica e progressiva que desenvolve coordenação motora, musicalidade e amor pela música desde cedo.</p>
+            <a href="#" class="general-btn">Consultar disponibilidade →</a>
+        </div>
+
+        <div class="general-card">
+            <div class="general-image-placeholder">🎹</div>
+            <h4 class="general-name">Piano para Adolescentes</h4>
+            <h3 class="general-age">11 a 17 anos</h3>
+            <p class="general-desc">Repertório variado e progressivo para adolescentes. Técnica, teoria básica e musicalidade em um ambiente motivador.</p>
+            <a href="#" class="general-btn">Consultar disponibilidade →</a>
+        </div>
+
+        <div class="general-card">
+            <div class="general-image-placeholder">🎹</div>
+            <h4 class="general-name">Piano para Adultos</h4>
+            <h3 class="general-age">18 anos em diante</h3>
+            <p class="general-desc">Para adultos que sempre quiseram aprender piano. Ritmo personalizado, sem pressão, com repertório adaptado ao gosto do aluno.</p>
+            <a href="#" class="general-btn">Consultar disponibilidade →</a>
+        </div>
+
+        <div class="general-card">
+            <div class="general-image-placeholder">🎹</div>
+            <h4 class="general-name">Teoria Musical Aplicada</h4>
+            <h3 class="general-age">Complementar</h3>
+            <p class="general-desc">Curso complementar de leitura musical, harmonia e percepção. Ideal como suporte para qualquer modalidade de piano.</p>
+            <a href="#" class="general-btn">Consultar disponibilidade →</a>
+        </div>
+    </div>
+</section>
