@@ -1,0 +1,78 @@
+.stats-bar-container {
+    width: 100%;
+    background: #301D59;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.stats-grid {
+    max-width: 1100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.stats-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.stats-icon-wrapper {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.1); /* Fundo sutil para o ícone */
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F59E0B; /* Laranja para destaque nos ícones */
+    font-size: 20px;
+}
+
+.stats-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats-number {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.stats-text {
+    font-size: 13px;
+    color: #94a3b8; /* Cinza azulado para não brigar com o número */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .stats-item {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+}

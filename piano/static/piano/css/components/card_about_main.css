@@ -1,0 +1,111 @@
+.about-container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px 20px 30px 20px;
+    background:  rgb(242, 242, 242);
+}
+
+/* Coluna da Imagem */
+.about-image-main-container {
+    flex: 1;
+    max-width: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 24px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.about-image-main {
+    width: 100%;
+    padding-top: 133.33%;
+}
+
+/* Coluna de Conteúdo */
+.about-content {
+    max-width: 800px;
+    flex: 1.2;
+}
+
+.about-label-top {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #F59E0B;
+     display: block;
+    margin-bottom: 12px;
+}
+
+.about-main-title {
+    text-align: left;
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #301d59;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.about-description p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #4b5563;
+    margin-bottom: 20px;
+}
+
+.about-description strong {
+    color: #F59E0B;
+}
+
+/* Lista de Benefícios - SEM UL/LI */
+.about-features-list {
+    margin-top: 30px;
+}
+
+.about-features-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.about-features-text {
+    font-size: 16px;
+    color: #374151;
+}
+
+.about-icon {
+    color: #F59E0B;
+    font-weight: bold;
+    border: 1.5px solid #F59E0B;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: left;
+    }
+
+    .about-image-main-container {
+        width: 100%;
+        max-width: 500px;
+    }
+}
