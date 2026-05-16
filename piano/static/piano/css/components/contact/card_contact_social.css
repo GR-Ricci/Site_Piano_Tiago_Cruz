@@ -1,0 +1,81 @@
+.social-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid #ECEAF2;
+    margin-bottom: 3rem;
+}
+
+.social-label {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #7F798C;
+    font-weight: 600;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 0.9rem;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.45rem 1.1rem;
+    border-radius: 0.75rem;
+    border: 1px solid #DEDAE8;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #241740;
+    text-decoration: none;
+    transition: 0.2s;
+    background: transparent;
+}
+
+.social-btn i {
+    color: #301D59;
+    font-size: 0.95rem;
+
+}
+
+.social-btn:hover {
+    background: #301D59;
+    border-color: #301D59;
+    color: white;
+}
+
+.social-btn:hover i {
+    color: white;
+}
+
+.social-btn.youtube-white {
+    background: transparent;
+    border: 1px solid #DEDAE8;
+    color: #241740;
+}
+
+.social-btn.youtube-white i {
+    color: #ffffff;
+    text-shadow: -1px -1px 0 #241740, 1px -1px 0 #241740, -1px 1px 0 #241740, 1px 1px 0 #241740;
+}
+
+.social-btn.youtube-white:hover i {
+    color: white;
+    text-shadow: none;
+}
+
+.social-btn.youtube-white:hover {
+    background: #301D59;
+    border-color: #301D59;
+    color: white;
+}
+
+.social-btn.youtube-white:hover i {
+    text-shadow: -1px -1px 0 #301D59, 1px -1px 0 #301D59, -1px 1px 0 #301D59, 1px 1px 0 #301D59;
+}

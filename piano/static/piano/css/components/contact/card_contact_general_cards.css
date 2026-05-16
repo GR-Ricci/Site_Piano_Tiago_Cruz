@@ -1,0 +1,51 @@
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2.2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.info-card {
+    background: #F2F2F2;
+    border: 1px solid #ECEAF2;
+    border-radius: 1rem;
+    padding: 1.1rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.info-icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 0.6rem;
+    background: #301D59;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.9rem auto;
+    font-size: 1.1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.info-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    color: #7F798C;
+    margin-bottom: 0.25rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.info-value {
+    font-weight: 600;
+    color: #241740;
+    font-size: 0.85rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.info-sub {
+    font-size: 0.75rem;
+    color: #494259;
+    font-family: 'Inter', sans-serif;
+}

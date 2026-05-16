@@ -1,0 +1,61 @@
+:root {
+
+}
+
+* {
+    font-family: inter;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    margin: 0;
+background: linear-gradient(180deg,
+    #8E7CB1 0%,    /* Roxo aberto, mas pastel */
+    #F7F5FA 18%,    /* Quase branco, com um toque de violeta */
+    #FFFFFF 100%
+);
+
+
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem 3rem;
+}
+
+.section-header {
+    margin-top: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.section-header .badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7F798C;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+.section-header h2 {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 700;
+    color: #301D59 ;
+    margin-bottom: 0.75rem;
+}
+.section-header .description {
+    color: #7F798C;
+    max-width: 704px;
+    margin: 0 auto;
+    font-size: 0.98rem;
+    font-weight:600;
+    line-height: 1.5;
+    padding: 0 1rem;
+    word-break: break-word;
+}

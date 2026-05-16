@@ -1,0 +1,73 @@
+.aligned-wrapper {
+    max-width: 704px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.contact-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.1rem;
+    margin-bottom: 2.2rem;
+}
+
+.whatsapp-card {
+    background: #25D366;
+    border-radius: 1.25rem;
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    text-decoration: none;
+    transition: transform 0.2s;
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.2);
+}
+
+.whatsapp-icon, .email-icon {
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.whatsapp-icon { background: rgba(255,255,255,0.2); color: white; }
+.whatsapp-text h3 { color: white; font-weight: 700; font-size: 1rem; }
+.whatsapp-text p { color: rgba(255,255,255,0.85); font-size: 0.75rem; }
+
+.whatsapp-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 14px #4ADE80;
+    cursor: pointer;
+}
+
+.email-card {
+    background: #301D59;
+    border: none;  /* força remover qualquer borda */
+    border-radius: 1.25rem;
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-sizing: border-box;  /* garante que a borda não altere o tamanho */
+}
+
+.email-icon { background: #5B3F8A; color: white; }
+.email-text h3 { color: white; font-weight: 700; font-size: 1rem; }
+.email-text p { color: rgba(255,255,255,0.85); font-size: 0.75rem; }
+
+.email-text h3 {
+    margin-left: -2.39rem;
+}
+
+.email-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px #5B3F8A;
+    cursor: pointer;
+    border: none;  /* força remover qualquer borda */
+}
