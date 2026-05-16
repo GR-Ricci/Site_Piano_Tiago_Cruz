@@ -21,7 +21,7 @@
 }
 
 .cta__title {
-    color: var(--purple-mid);
+    color: #301D59;
     font-size: clamp(1.4rem, 2.5vw, 1.9rem);
     font-weight: 700;
     margin-bottom: 1rem;
@@ -29,7 +29,50 @@
 
 .cta__text {
     color: var(--gray-label);
+    font-size: 0.9rem;
     line-height: 1.8;
     margin-bottom: 2rem;
     max-width: 480px;
+    font-weight: 600;
+}
+
+/* ===== CTA whats ===== */
+
+.btn-whatsapp-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.75rem;
+    border-radius: 9999px;
+    border: 2px solid transparent;  /* borda invisível que reserva o espaço */
+
+
+    background: #301D59;
+    color: white;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: opacity 0.2s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-whatsapp-cta:hover {
+    opacity: 0.9;
+    border: 2px solid #F59E0B;
+    box-shadow: 0 1px 8px #F59E0B;
+
+    color: #F59E0B;
+
+}
+
+.btn-whatsapp-cta__icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: currentColor;
+    flex-shrink: 0;
+}
+
+.btn-whatsapp-cta__arrow {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
 }

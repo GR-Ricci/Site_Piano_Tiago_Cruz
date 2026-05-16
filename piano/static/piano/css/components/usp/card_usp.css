@@ -97,9 +97,6 @@
     opacity: 0.9;
 }
 
-.btn-whatsapp--dark {
-    background: var(--purple-dark);
-}
 
 .btn-whatsapp__icon {
     width: 1.25rem;

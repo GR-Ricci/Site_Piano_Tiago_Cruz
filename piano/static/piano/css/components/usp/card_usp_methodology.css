@@ -15,7 +15,7 @@
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: var(--gray-label);
+    color: #F59E0B;
     margin-bottom: 0.75rem;
 }
 
@@ -47,7 +47,7 @@
     height: 3.5rem;
     border-radius: 50%;
     background: var(--purple-dark);
-    border: 2px solid rgba(155, 142, 196, 0.35);
+    border: 2px solid #F59E0B;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,6 +66,7 @@
 
 .methodology-card__text {
     color: var(--text-white-card);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     line-height: 1.75;
+    font-weight: 600;
 }
