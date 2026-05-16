@@ -43,7 +43,8 @@
     --spacing-gutter-medium: 3rem;
     --spacing-gutter-large: 4rem;
 
-     --purple-deep: #1a0f2e;
+    /* usp */
+    --purple-deep: #1a0f2e;
     --purple-mid: #241740;
     --purple-dark: #301D59;
     --lavender: #9B8EC4;
@@ -61,4 +62,16 @@
     --whatsapp-green: #25D366;
     --container-max: 1280px;
     --section-padding: 5rem 0;
+
+    /* contact */
+    --font-size: 16px;
+    --background: #ffffff;
+    --foreground: #241740;
+    --card: #ffffff;
+    --border: rgba(0, 0, 0, 0.1);
+    --primary: #301D59;
+    --primary-foreground: #ffffff;
+    --secondary: #F2F2F2;
+    --muted-foreground: #7F798C;
+    --whatsapp: #25D366;
 }

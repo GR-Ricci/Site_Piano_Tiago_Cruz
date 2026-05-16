@@ -10,8 +10,8 @@ html{
 }
 
 body{
+    font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
-    font-family: var(--font-primary);
     background: var(--color-gray-1);
     color: var(--color-dark-text);
 }
