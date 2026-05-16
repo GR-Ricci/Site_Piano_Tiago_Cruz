@@ -10,7 +10,8 @@
 
 .main-class-content{
     text-align: left;
-    margin-left: 10rem;
+    margin-left: 14rem;
+
 }
 
 
@@ -19,6 +20,12 @@
     font-size: 2.5rem;
     font-weight: 500;
     color: white;
+    margin-bottom: 2rem;
+}
+
+.main-class-title strong{
+    color: var(--lavender);
+    font-weight: 500;
 }
 
 .main-class-description {
@@ -26,6 +33,7 @@
     font-size: 1rem;
     font-weight: 500;
     color: white;
+    margin-bottom: 0.5rem;
 }
 
 .main-class-btn {
