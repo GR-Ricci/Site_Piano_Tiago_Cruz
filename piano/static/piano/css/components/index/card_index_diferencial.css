@@ -1,7 +1,8 @@
 /*parte diferenciais*/
 .partediferenciais{
-    padding: 5rem 0;
-    background-color: #ffffff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: rgb(242, 242, 242);
     font-family: 'Inter', sans-serif;
 }
 
@@ -13,7 +14,7 @@
 
 .partediferenciaisgrid{
     display: grid;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .partediferenciaisitem{
@@ -34,6 +35,7 @@
 }
 
 .partediferenciaisnumero{
+    background: #F59E0B;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -41,13 +43,13 @@
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     margin-bottom: 1.25rem;
-    background-color: #F2F2F2;
+
 }
 
 .partediferenciaisnumero span{
     font-size: 0.75rem;
     font-weight: 900;
-    color: #301D59;
+    color: white;
 }
 
 @media (min-width: 640px){

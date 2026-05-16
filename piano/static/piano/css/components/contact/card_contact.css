@@ -25,6 +25,7 @@ body {
 
 /* ===== SEÇÃO CONTATO ===== */
 .section-header {
+    margin-top: 1.5rem;
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -156,7 +157,7 @@ body {
     gap: 1.2rem;
     padding-top: 1.2rem;
     border-top: 1px solid #ECEAF2;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 .social-label {
     font-size: 0.7rem;

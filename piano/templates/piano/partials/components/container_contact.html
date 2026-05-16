@@ -66,3 +66,63 @@
 
 <script src="contato.js"></script>
 
+<script>
+    (function() {
+        let modalState = 'form';
+        let formData = { name: '', email: '', message: '' };
+        const modalOverlay = document.getElementById('emailModal');
+        const modalContentDiv = document.getElementById('modalDynamicContent');
+        const openBtn = document.getElementById('openEmailModalBtn');
+        const closeBtn = document.getElementById('closeModalBtn');
+
+        function renderModal() {
+            if (modalState === 'form') {
+                modalContentDiv.innerHTML = `
+                    <div class="modal-header">
+                        <div class="modal-header-icon"><i class="far fa-envelope"></i></div>
+                        <div><h3 style="font-weight:700">Enviar e-mail</h3><p style="font-size:0.7rem; color:#7F798C">contato@institutopianotiagocruz.com.br</p></div>
+                    </div>
+                    <form id="emailForm">
+                        <div class="form-group"><label>Nome completo *</label><input type="text" id="modalName" placeholder="Seu nome" required></div>
+                        <div class="form-group"><label>E-mail *</label><input type="email" id="modalEmail" placeholder="seu@email.com" required></div>
+                        <div class="form-group"><label>Mensagem *</label><textarea id="modalMessage" rows="4" placeholder="Escreva sua mensagem..." required></textarea></div>
+                        <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Enviar mensagem</button>
+                    </form>
+                `;
+                const form = document.getElementById('emailForm');
+                if (form) {
+                    if (formData.name) document.getElementById('modalName').value = formData.name;
+                    if (formData.email) document.getElementById('modalEmail').value = formData.email;
+                    if (formData.message) document.getElementById('modalMessage').value = formData.message;
+                    form.addEventListener('submit', (e) => {
+                        e.preventDefault();
+                        const name = document.getElementById('modalName').value.trim();
+                        const email = document.getElementById('modalEmail').value.trim();
+                        const message = document.getElementById('modalMessage').value.trim();
+                        if (!name || !email || !message) return alert('Preencha todos os campos.');
+                        formData = { name, email, message };
+                        modalState = 'success';
+                        renderModal();
+                    });
+                }
+            } else {
+                modalContentDiv.innerHTML = `
+                    <div class="success-message">
+                        <div class="success-icon"><i class="fas fa-paper-plane"></i></div>
+                        <h4 style="margin-bottom:0.5rem">Mensagem enviada!</h4>
+                        <p style="color:#7F798C; font-size:0.8rem;">O Prof. Tiago Cruz responderá em breve. Use o WhatsApp para resposta imediata.</p>
+                        <a href="https://wa.me/5511998765432?text=Olá%20Prof.%20Tiago!%20Tenho%20interesse" target="_blank" class="wa-link-modal"><i class="fab fa-whatsapp"></i> Falar no WhatsApp</a>
+                    </div>
+                `;
+            }
+        }
+
+        function openModal() { modalState = 'form'; renderModal(); modalOverlay.classList.add('active'); document.body.style.overflow = 'hidden'; }
+        function closeModal() { modalOverlay.classList.remove('active'); document.body.style.overflow = ''; modalState = 'form'; formData = { name: '', email: '', message: '' }; }
+
+        if (openBtn) openBtn.addEventListener('click', openModal);
+        if (closeBtn) closeBtn.addEventListener('click', closeModal);
+        if (modalOverlay) modalOverlay.addEventListener('click', (e) => { if (e.target === modalOverlay) closeModal(); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modalOverlay.classList.contains('active')) closeModal(); });
+    })();
+</script>

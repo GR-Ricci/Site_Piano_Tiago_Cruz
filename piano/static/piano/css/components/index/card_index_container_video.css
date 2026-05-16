@@ -1,7 +1,7 @@
 /* parte video */
 
 .ParteVideo{
-    background: rgb(242, 242, 242);
+    background: rgb(242, 242, 242) !important;
     padding: 1rem 0rem 1rem;
     font-family: 'Inter', sans-serif;
 }

@@ -8,7 +8,7 @@
     justify-content: center;
     overflow: hidden;
     margin-top: 0;
-    padding: 3.1rem 0;
+    padding: 2.5rem 0 3.1rem 0;  /* diminui o padding-top de 3.1rem para 1rem */
 }
 
 .BannerImage{
@@ -42,6 +42,7 @@
 }
 
 .BannerText{
+    padding-top: 0rem;
     text-align: center;
     position: relative;
     z-index: 10;
@@ -50,21 +51,26 @@
 }
 
 .instituto{
+    display: block;
+    margin-bottom: 0.8rem;
+    margin-top: 0rem;
+    padding-top: 0;
+    line-height: 1;
     color: #9B8EC4;
-    font-size: 12px;
+    font-size: 15px;
     letter-spacing: 4.2px;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .BannerText h1{
     color: #FFFFFF;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
     font-size: clamp(35.2px, 5.5vw, 67.2px);
     width: 832px;
     font-weight: 300;
     line-height: 1.15;
-    letter-spacing: -0.16px ;
+    letter-spacing: -0.66px ;
 }
 
 .roxo{
@@ -73,6 +79,9 @@
 }
 
 .Tiago {
+    color: #F59E0B;
+    display: block;
+    margin-bottom: 1.5rem;
     font-size: 20px;
     font-weight: bold;
 }
@@ -84,6 +93,7 @@
     font-size: 16.5px;
     line-height: 30.25px;
     color: #FFFFFF94;
+    font-weight: 500;
     font-family: 'Inter', sans-serif;
 }
 
@@ -121,23 +131,28 @@
     opacity: 0.9;
     transform: translateY(-2px);
     cursor: pointer;
+    background:
 }
 
 .BannerInst{
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    margin-top: 1rem;
     padding: 16px 32px;
     border-radius: 9999px;
-    border: 1px solid rgba(255,255,255,0.25);
-    font-size: 14px;
-    color: rgba(255,255,255,0.75);
+    border: 1px solid #F59E0B ;
+    color: #F59E0B;
+    background-color: rgba(255,255,255,0.10);
+    font-size: 20px;
+    font-weight: 500;
     text-decoration: none;
     transition: 0.15s ease;
 }
 
-.BannerInst:hover{
-    background-color: rgba(255,255,255,0.10);
-    transform: translateY(-2px);
+.BannerInst:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(245, 158, 11, 0.25);
+        font-weight: bold;
     cursor: pointer;
 }
