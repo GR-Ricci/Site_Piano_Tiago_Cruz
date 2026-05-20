@@ -135,19 +135,47 @@
     font-family: 'Inter', sans-serif;
 }
 
+/* ===== BOTÃO COM ESTILO DE LINK (LIMPEZA TOTAL) ===== */
 .bio-card-link {
-    color: #F59E0B;
-    text-decoration: none;
+    /* Reset total e forçado */
+    background: transparent !important; /* Garante fundo transparente */
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0;
+    outline: none !important;
+    appearance: none;
+    -webkit-appearance: none;
+
+    /* Cursor e Interação */
+    cursor: pointer !important;
+    display: inline-block;
+    width: fit-content;
+
+    /* Estilo Visual Original */
+    color: #F59E0B !important; /* Mantém o dourado */
     font-weight: 700;
     font-size: 14px;
-    transition: all 0.3s ease;
     font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
 }
 
 .bio-card-link:hover {
     transform: translateX(5px);
     opacity: 0.9;
+    background: transparent !important;
+    color: #F59E0B !important;
 }
+
+/* Remove qualquer marcação de foco (azul/preta) ao clicar */
+.bio-card-link:focus,
+.bio-card-link:active {
+    outline: none !important;
+    background: transparent !important;
+    border: none !important;
+}
+
 
 /* ===== RESPONSIVE - MUDA PARA 1 COLUNA APENAS EM TELAS PEQUENAS ===== */
 @media (max-width: 768px) {

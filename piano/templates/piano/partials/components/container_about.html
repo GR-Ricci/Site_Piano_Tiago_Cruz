@@ -87,51 +87,162 @@
 
 <section class="bio-section">
     <div class="bio-container">
-        <span class="bio-label">CONHEÇA MAIS</span>
-        <h2 class="bio-title">Quem faz parte do Instituto</h2>
+    <span class="bio-label">CONHEÇA MAIS</span>
+    <h2 class="bio-title">Quem faz parte do Instituto</h2>
 
-        <div class="bio-cards-grid">
-            <!-- Card 1: Professor -->
-            <div class="bio-card">
-                <div class="bio-card-image" style="background-image: url('{% static 'piano/images/about/cards/professor.jpg' %}');">
-                    <div class="bio-card-image-overlay"></div>
-                </div>
-
-                <div class="bio-card-content">
-                    <div class="bio-card-header">
-                        <span class="bio-card-label">FUNDADOR E ÚNICO PROFESSOR</span>
-                        <h3 class="bio-card-title">Prof. Tiago Cruz</h3>
-                        <p class="bio-card-subtitle">Pianista, Intérprete e Educador Musical</p>
-                    </div>
-
-                    <p class="bio-card-description">
-                        Doutorado pela ECA-USP, formação em três países, premiado internacionalmente. O mesmo professor que fundou o instituto acompanha cada aluno do início ao fim.
-                    </p>
-
-                    <a href="#" class="bio-card-link">Ver perfil completo →</a>
-                </div>
+    <div class="bio-cards-grid">
+        <!-- Card 1: Professor - Imagem de Piano de Cauda Profissional -->
+        <div class="bio-card">
+            <div class="bio-card-image" style="background-image: url('https://images.unsplash.com/photo-1552422535-c45813c61732?q=80&w=1000&auto=format&fit=crop' );">
+                <div class="bio-card-image-overlay"></div>
             </div>
-
-            <!-- Card 2: Resultados -->
-            <div class="bio-card">
-                <div class="bio-card-image" style="background-image: url('{% static 'piano/images/about/cards/aluno.jpg' %}');">
-                    <div class="bio-card-image-overlay"></div>
+            <div class="bio-card-content">
+                <div class="bio-card-header">
+                    <span class="bio-card-label">FUNDADOR E ÚNICO PROFESSOR</span>
+                    <h3 class="bio-card-title">Prof. Tiago Cruz</h3>
+                    <p class="bio-card-subtitle">Pianista, Intérprete e Educador Musical</p>
                 </div>
+                <p class="bio-card-description">
+                    Doutorado pela ECA-USP, formação em três países, premiado internacionalmente. O mesmo professor que fundou o instituto acompanha cada aluno do início ao fim.
+                </p>
+                <button class="bio-card-link open-modal-btn" data-content-type="professor">Ver perfil completo →</button>
+            </div>
+        </div>
 
-                <div class="bio-card-content">
-                    <div class="bio-card-header">
-                        <span class="bio-card-label">RESULTADOS</span>
-                        <h3 class="bio-card-title">Alunos Aprovados</h3>
-                        <p class="bio-card-subtitle">ECA-USP · UNICAMP · UFSCar e mais</p>
-                    </div>
-
-                    <p class="bio-card-description">
-                        Mais de 60 alunos aprovados nas principais universidades públicas do país desde 2010. Cada história é única — técnica, dedicação e o método certo fazem a diferença.
-                    </p>
-
-                    <a href="#" class="bio-card-link">Ver todos os aprovados →</a>
+        <!-- Card 2: Resultados - Imagem de Estudante de Piano dedicada -->
+        <div class="bio-card">
+            <div class="bio-card-image" style="background-image: url('https://images.unsplash.com/photo-1514119412350-e174d90d280e?q=80&w=1000&auto=format&fit=crop' );">
+                <div class="bio-card-image-overlay"></div>
+            </div>
+            <div class="bio-card-content">
+                <div class="bio-card-header">
+                    <span class="bio-card-label">RESULTADOS</span>
+                    <h3 class="bio-card-title">Alunos Aprovados</h3>
+                    <p class="bio-card-subtitle">ECA-USP · UNICAMP · UFSCar e mais</p>
                 </div>
+                <p class="bio-card-description">
+                    Mais de 60 alunos aprovados nas principais universidades públicas do país desde 2010. Cada história é única — técnica, dedicação e o método certo fazem a diferença.
+                </p>
+                <button class="bio-card-link open-modal-btn" data-content-type="alunos">Ver todos os aprovados →</button>
             </div>
         </div>
     </div>
+</div>
+
 </section>
+
+<div id="bio-modal" class="bio-modal-overlay">
+    <div class="bio-modal-container">
+        <button class="bio-modal-close" id="bio-closeModalBtn"><i class="fas fa-times"></i></button>
+        <div id="bio-modalDynamicContent" class="bio-modal-content"></div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const modalOverlay = document.getElementById('bio-modal');
+        const modalContentDiv = document.getElementById('bio-modalDynamicContent');
+        const closeModalBtn = document.getElementById('bio-closeModalBtn');
+        const openModalBtns = document.querySelectorAll('.open-modal-btn');
+
+        const contentData = {
+            professor: `
+                <div class="bio-modal-vertical">
+                    <span class="bio-modal-tag">Fundador & Educador</span>
+                    <h4>Prof. Tiago Cruz</h4>
+
+                    <!-- Imagem Genérica e Elegante (Mãos ao Piano) -->
+                    <div class="bio-modal-img-full" style="background-image: url('https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=1000&auto=format&fit=crop' );"></div>
+
+                    <div class="bio-modal-text-content">
+                        <p>Com uma trajetória consolidada no ensino musical, o Prof. Tiago Cruz iniciou em 2026 uma <strong>parceria exclusiva com a USP de Ribeirão Preto</strong>. O objetivo é oferecer uma preparação de alto rendimento para os vestibulares de música, unindo técnica técnica avançada e teoria aplicada.</p>
+
+                        <div class="bio-modal-features">
+                            <div class="feature-item"><strong>Preparatório USP:</strong> Foco total nos exames de aptidão e performance.</div>
+                            <div class="feature-item"><strong>Metodologia Própria:</strong> Desenvolvimento da expressividade desde as primeiras aulas.</div>
+                        </div>
+                    </div>
+                </div>
+            `,
+            alunos: `
+                 <div class="bio-modal-full">
+                    <h4>Destaques Acadêmicos</h4>
+                    <p>Conheça alguns dos nossos talentos aprovados nas principais universidades.</p>
+                    <div class="alunos-grid">
+                        <div class="aluno-card-mini">
+                            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=200&h=200&auto=format&fit=crop" alt="Aluno">
+                            <div class="aluno-info">
+                                <strong>Lucas Mendes</strong>
+                                <span>Aprovado USP 2026</span>
+                                <p>Focado em Piano Erudito e Composição.</p>
+                            </div>
+                        </div>
+                        <div class="aluno-card-mini">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&h=200&auto=format&fit=crop" alt="Aluna">
+                            <div class="aluno-info">
+                                <strong>Beatriz Souza</strong>
+                                <span>Aprovada UNICAMP 2026</span>
+                                <p>Preparação intensiva em 12 meses.</p>
+                            </div>
+                        </div>
+                        <div class="aluno-card-mini">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&h=200&auto=format&fit=crop" alt="Aluno">
+                            <div class="aluno-info">
+                                <strong>Ricardo Alves</strong>
+                                <span>Aprovado UNESP 2026</span>
+                                <p>Destaque em Teoria e Percepção.</p>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            `
+        };
+
+
+
+        function openModal(contentType) {
+            if (contentData[contentType]) {
+                modalContentDiv.innerHTML = contentData[contentType];
+                modalOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Impede o scroll do body
+            } else {
+                console.error('Conteúdo não encontrado para o tipo:', contentType);
+            }
+        }
+
+        function closeModal() {
+            modalOverlay.classList.remove('active');
+            document.body.style.overflow = ''; // Restaura o scroll do body
+            modalContentDiv.innerHTML = ''; // Limpa o conteúdo da modal ao fechar
+        }
+
+        // Event listeners para os botões que abrem a modal
+        openModalBtns.forEach(button => {
+            button.addEventListener('click', (e) => {
+                const contentType = e.target.dataset.contentType;
+                openModal(contentType);
+            });
+        });
+
+        // Event listener para o botão de fechar a modal
+        if (closeModalBtn) {
+            closeModalBtn.addEventListener('click', closeModal);
+        }
+
+        // Fechar modal clicando fora do conteúdo
+        if (modalOverlay) {
+            modalOverlay.addEventListener('click', (e) => {
+                if (e.target === modalOverlay) {
+                    closeModal();
+                }
+            });
+        }
+
+        // Fechar modal com a tecla ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+                closeModal();
+            }
+        });
+    });
+</script>
