@@ -1,34 +1,30 @@
 {% load static %}
 
 <section class="BannerIndex">
-        <div class="Bannerimage">
-            <img class="imagemdefundo" src="{% static 'piano/images/classes/main/piano.jpeg' %}" alt="pianofundo   ">   
-            <div class="imageoverlay"></div>
-        </div>
-        <div class="Banner">
-            
-            <div class="BannerText">
-                <span class="instituto">---- Instituto De Piano ----</span>
-                <p class="Tiago">TIAGO CRUZ</p>
-                <h1>O caminho mais sólido para <span class="roxo">Dominar o Piano</span> e ingressar na USP</h1>
-                <div class="bannertextp">
-                    <p>Aulas individuais de piano erudito com parceria oficial com a Universidade de São Paulo. Formação técnica completa — do iniciante ao candidato ao vestibular de música.</p>
-                </div>
-                <div class="BannerButtons">
-                <!-- <a class="BannerZap">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        Falar com o professor
-                    </a> -->
-                    <a href="/about/" class="BannerInst">
-                        Conheça o Instituto!
-                    </a>
-                </div>
+    <div class="Bannerimage">
+        <img class="imagemdefundo" src="{% static 'piano/images/classes/main/piano.jpeg' %}" alt="pianofundo">
+        <div class="imageoverlay"></div>
+    </div>
+    <div class="Banner">
+        <div class="BannerText">
+            <span class="instituto">---- Instituto De Piano ----</span>
+            <p class="Tiago">TIAGO CRUZ</p>
+            <h1>O caminho mais sólido para <span class="roxo">Dominar o Piano</span> e ingressar na USP</h1>
+            <div class="bannertextp">
+                <p>Aulas individuais de piano erudito com parceria oficial com a Universidade de São Paulo. Formação técnica completa — do iniciante ao candidato ao vestibular de música.</p>
+            </div>
+            <div class="BannerButtons">
+                <a href="/about/" class="BannerInst">
+                    Conheça o Instituto!
+                </a>
             </div>
         </div>
-    </section>
-    <section class="Estatisticas">
-        <div class="EstatiscasBackground">
-            <div class="EstatisticasGrid">
+    </div>
+</section>
+
+<section class="Estatisticas">
+    <div class="EstatiscasBackground">
+        <div class="EstatisticasGrid">
             <div class="EstatisticasBox">
                 <div class="statsicon">
                     <i class="fa-solid fa-user-group"></i>
@@ -66,10 +62,10 @@
                 </div>
             </div>
         </div>
-        </div>
-    </section>
-    <section class="ParteVideo">
-     <div class="ParteVideo">
+    </div>
+</section>
+
+<section class="ParteVideo">
     <div class="ParteVideoContainer">
         <div class="ParteVideoCabecalho">
             <span class="ParteVideoTag">Conheça o instituto</span>
@@ -77,13 +73,15 @@
         </div>
 
         <div class="ParteVideoCard">
-            <div class="ParteVideoThumbnail">
-                <img src="{% static 'piano/images/classes/main/salaopiano.jpg' %}" alt="Apresentação do Instituto" class="ParteVideoImagem">
+            <!-- Adicionado id="videoContainer" para o JavaScript encontrar onde inserir o vídeo -->
+            <div class="ParteVideoThumbnail" id="videoContainer">
+                <img src="{% static 'piano/images/index/tiago.jpg' %}" alt="Apresentação do Instituto" class="ParteVideoImagem">
 
                 <div class="ParteVideoOverlay"></div>
 
                 <div class="ParteVideoPlayWrapper">
-                    <button class="ParteVideoPlayButton">
+                    <!-- Adicionado id="playBtn" para o JavaScript detectar o clique -->
+                    <button class="ParteVideoPlayButton" id="playBtn">
                         ▶
                     </button>
                 </div>
@@ -97,51 +95,48 @@
             </div>
         </div>
     </div>
-</div>
-    </section>
+</section>
 
 <section class="Diferenciais">
     <div class="partediferenciais">
         <div class="partediferenciaiscontainer">
             <div class="partediferenciaisgrid">
-
                 <div class="partediferenciaisitem">
                     <div class="partediferenciaisnumero">
                         <span>01</span>
                     </div>
-
                     <h4>Ambiente profissional</h4>
-
-                    <p>
-                        Salas acusticamente tratadas com piano de concerto Steinway.
-                    </p>
+                    <p>Salas acusticamente tratadas com piano de concerto Steinway.</p>
                 </div>
-
                 <div class="partediferenciaisitem">
                     <div class="partediferenciaisnumero">
                         <span>02</span>
                     </div>
-
                     <h4>Método individual</h4>
-
-                    <p>
-                        Cada aula é 100% adaptada ao ritmo e aos objetivos do aluno.
-                    </p>
+                    <p>Cada aula é 100% adaptada ao ritmo e aos objetivos do aluno.</p>
                 </div>
-
                 <div class="partediferenciaisitem">
                     <div class="partediferenciaisnumero">
                         <span>03</span>
                     </div>
-
                     <h4>Parceria com a USP</h4>
-
-                    <p>
-                        Acesso a workshops, masterclasses e laboratórios da ECA-USP.
-                    </p>
+                    <p>Acesso a workshops, masterclasses e laboratórios da ECA-USP.</p>
                 </div>
-
             </div>
         </div>
     </div>
 </section>
+
+<script>
+    document.getElementById('playBtn').addEventListener('click', function() {
+        var container = document.getElementById('videoContainer');
+
+        // Agora apontamos para a ROTA que criamos, não para o arquivo estático
+        container.innerHTML = `
+            <video controls autoplay style="width:100%; border-radius:20px; display:block;">
+                <source src="/video-instituto/" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+        `;
+    });
+</script>

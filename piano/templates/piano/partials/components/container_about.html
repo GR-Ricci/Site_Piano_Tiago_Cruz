@@ -93,7 +93,7 @@
     <div class="bio-cards-grid">
         <!-- Card 1: Professor - Imagem de Piano de Cauda Profissional -->
         <div class="bio-card">
-            <div class="bio-card-image" style="background-image: url('https://images.unsplash.com/photo-1552422535-c45813c61732?q=80&w=1000&auto=format&fit=crop' );">
+<div class="bio-card-image" style="background-image: url('{% static 'piano/images/about/cards/professor.jpg' %}');">
                 <div class="bio-card-image-overlay"></div>
             </div>
             <div class="bio-card-content">
@@ -103,7 +103,9 @@
                     <p class="bio-card-subtitle">Pianista, Intérprete e Educador Musical</p>
                 </div>
                 <p class="bio-card-description">
-                    Doutorado pela ECA-USP, formação em três países, premiado internacionalmente. O mesmo professor que fundou o instituto acompanha cada aluno do início ao fim.
+                Proprietário e professor titular do instituto,
+                Tiago Cruz é graduado pela universidade de São Paulo, sob orientação do Prof.Dr Fernando Crespo Corvisier.
+                Atua como professor de piano desde 2005 e há mais de 20 prepara alunos nos cursos livres e preparatório para vestibulares de música.
                 </p>
                 <button class="bio-card-link open-modal-btn" data-content-type="professor">Ver perfil completo →</button>
             </div>
@@ -121,9 +123,11 @@
                     <p class="bio-card-subtitle">ECA-USP · UNICAMP · UFSCar e mais</p>
                 </div>
                 <p class="bio-card-description">
-                    Mais de 60 alunos aprovados nas principais universidades públicas do país desde 2010. Cada história é única — técnica, dedicação e o método certo fazem a diferença.
+                Mais de 60 alunos aprovados nas mais renomadas universidades do Brasil como: USP RP, ECA USP SP, UNICAMP E UNESP SP.
+
+                O Insituto atende alunos de várias cidades e estados do Brasil, presencial ou on-line, e também de outros países como: EUA, Moçambique, Canadá.
                 </p>
-                <button class="bio-card-link open-modal-btn" data-content-type="alunos">Ver todos os aprovados →</button>
+                <button class="bio-card-link open-modal-btn" data-content-type="alunos">Ver aprovados →</button>
             </div>
         </div>
     </div>
@@ -152,10 +156,16 @@
                     <h4>Prof. Tiago Cruz</h4>
 
                     <!-- Imagem Genérica e Elegante (Mãos ao Piano) -->
-                    <div class="bio-modal-img-full" style="background-image: url('https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=1000&auto=format&fit=crop' );"></div>
+                    <div class="bio-modal-img-full" style="background-image: url('{% static 'piano/images/about/cards/professor.jpg' %}');"></div>
 
                     <div class="bio-modal-text-content">
-                        <p>Com uma trajetória consolidada no ensino musical, o Prof. Tiago Cruz iniciou em 2026 uma <strong>parceria exclusiva com a USP de Ribeirão Preto</strong>. O objetivo é oferecer uma preparação de alto rendimento para os vestibulares de música, unindo técnica técnica avançada e teoria aplicada.</p>
+                        <p>
+                        Iniciou seus estudos aos 08 anos de idade. Aos 16 anos ingressou no conservatório de sua cidade na classe de piano da Profa. Sheila Terezinha Húngaro Duarte.
+                        Obteve aulas de piano aperfeiçoamento com a pianista Patrizia Prati (Itália) e preparação para vestibular com o pianista Alexandre Delsin Guimarães (Brasil).
+                        É graduado pela Universidade de São Paulo USP-RP e deve sua formação pianística aos professores doutores Fernando Crespo Corvisier e Fátima Monteiro Corvisier.
+                        Como professor de piano, atua há mais de 21 anos, preparando alunos para vestibulares de música, concursos, com êxito em aprovações nas melhores universidades de música da América Latina; USP, UNESP e UNICAMP.
+                        Hoje, Tiago Cruz atende seus alunos online ou presencial no Instituto de Piano Tiago Cruz, onde é proprietário, diretor e professor.
+                         </p>
 
                         <div class="bio-modal-features">
                             <div class="feature-item"><strong>Preparatório USP:</strong> Foco total nos exames de aptidão e performance.</div>
@@ -170,27 +180,27 @@
                     <p>Conheça alguns dos nossos talentos aprovados nas principais universidades.</p>
                     <div class="alunos-grid">
                         <div class="aluno-card-mini">
-                            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=200&h=200&auto=format&fit=crop" alt="Aluno">
+                            <img src="{% static 'piano/images/about/cards/aprove/luiz.jpg' %}" alt="Aluno">
                             <div class="aluno-info">
-                                <strong>Lucas Mendes</strong>
-                                <span>Aprovado USP 2026</span>
-                                <p>Focado em Piano Erudito e Composição.</p>
+                                <strong>Luiz Soares</strong>
+                                <span>Aprovado - UFMG / UEMG </span>
+                                <p>2026</p>
                             </div>
                         </div>
                         <div class="aluno-card-mini">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&h=200&auto=format&fit=crop" alt="Aluna">
+                            <img src="{% static 'piano/images/about/cards/aprove/higor.jpg' %}" alt="Aluno">
                             <div class="aluno-info">
-                                <strong>Beatriz Souza</strong>
-                                <span>Aprovada UNICAMP 2026</span>
-                                <p>Preparação intensiva em 12 meses.</p>
+                                <strong>Higor Carmeloci</strong>
+                                <span>Aprovado - UNICAMP / USP RP</span>
+                                <p>2026</p>
                             </div>
                         </div>
                         <div class="aluno-card-mini">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&h=200&auto=format&fit=crop" alt="Aluno">
+                            <img src="{% static 'piano/images/about/cards/aprove/gabriel.jpg' %}" alt="Aluno">
                             <div class="aluno-info">
-                                <strong>Ricardo Alves</strong>
-                                <span>Aprovado UNESP 2026</span>
-                                <p>Destaque em Teoria e Percepção.</p>
+                                <strong>Gabriel Ricci</strong>
+                                <span>Aprovado - USP RP</span>
+                                <p>2021</p>
                             </div>
                         </div>
                     </div>

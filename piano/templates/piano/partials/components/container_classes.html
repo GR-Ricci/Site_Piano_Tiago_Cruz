@@ -16,8 +16,11 @@
             incluindo masterclasses e orientação especializada.
         </p>
 
-        <a href="#" class="main-class-btn">
-           Saiba mais<i class="fas fa-music"></i>
+        <a href="https://wa.me/5511998765432?text={{ 'Olá! Gostaria de saber mais sobre a preparação em Piano Erudito!'|urlencode }}"
+           class="main-class-btn"
+           target="_blank"
+           rel="noopener noreferrer">
+           Saiba mais <i class="fas fa-music"></i>
         </a>
 
     </div>
@@ -27,36 +30,69 @@
     <h2 class="general-title">Outros Programas</h2>
 
     <div class="general-grid">
+        <!-- Card 1: Piano para Crianças -->
         <div class="general-card">
-            <div class="general-image-placeholder">🎹</div>
+            <div class="general-image-placeholder"
+                 style="background-image: url('{% static 'piano/images/classes/general/cards.png' %}');"></div>
             <h4 class="general-name">Piano para Crianças</h4>
             <h3 class="general-age">5 a 10 anos</h3>
             <p class="general-desc">Metodologia lúdica e progressiva que desenvolve coordenação motora, musicalidade e amor pela música desde cedo.</p>
-            <a href="#" class="general-btn">Consultar disponibilidade →</a>
+            <a href="https://wa.me/5511998765432?text={{ 'Olá! Gostaria de saber mais sobre Piano para Crianças'|urlencode }}"
+               class="general-btn"
+               target="_blank"
+               rel="noopener noreferrer">Consultar disponibilidade →</a>
         </div>
 
+        <!-- Card 2: Piano para Adolescentes -->
         <div class="general-card">
-            <div class="general-image-placeholder">🎹</div>
+            <div class="general-image-placeholder"
+                 style="background-image: url('{% static 'piano/images/classes/general/cards.png' %}');"></div>
             <h4 class="general-name">Piano para Adolescentes</h4>
             <h3 class="general-age">11 a 17 anos</h3>
             <p class="general-desc">Repertório variado e progressivo para adolescentes. Técnica, teoria básica e musicalidade em um ambiente motivador.</p>
-            <a href="#" class="general-btn">Consultar disponibilidade →</a>
+            <a href="https://wa.me/5511998765432?text={{ 'Olá! Gostaria de saber mais sobre Piano para Adolescentes'|urlencode }}"
+               class="general-btn"
+               target="_blank"
+               rel="noopener noreferrer">Consultar disponibilidade →</a>
         </div>
 
+        <!-- Card 3: Piano para Adultos -->
         <div class="general-card">
-            <div class="general-image-placeholder">🎹</div>
+            <div class="general-image-placeholder"
+                 style="background-image: url('{% static 'piano/images/classes/general/cards.png' %}');"></div>
             <h4 class="general-name">Piano para Adultos</h4>
             <h3 class="general-age">18 anos em diante</h3>
             <p class="general-desc">Para adultos que sempre quiseram aprender piano. Ritmo personalizado, sem pressão, com repertório adaptado ao gosto do aluno.</p>
-            <a href="#" class="general-btn">Consultar disponibilidade →</a>
+            <a href="https://wa.me/5511998765432?text={{ 'Olá! Gostaria de saber mais sobre Piano para Adultos'|urlencode }}"
+               class="general-btn"
+               target="_blank"
+               rel="noopener noreferrer">Consultar disponibilidade →</a>
         </div>
 
+        <!-- Card 4: Teoria Musical Aplicada -->
         <div class="general-card">
-            <div class="general-image-placeholder">🎹</div>
+            <div class="general-image-placeholder"
+                 style="background-image: url('{% static 'piano/images/classes/general/cards.png' %}');"></div>
             <h4 class="general-name">Teoria Musical Aplicada</h4>
             <h3 class="general-age">Complementar</h3>
             <p class="general-desc">Curso complementar de leitura musical, harmonia e percepção. Ideal como suporte para qualquer modalidade de piano.</p>
-            <a href="#" class="general-btn">Consultar disponibilidade →</a>
+            <a href="https://wa.me/5511998765432?text={{ 'Olá! Gostaria de saber mais sobre Teoria Musical Aplicada'|urlencode }}"
+               class="general-btn"
+               target="_blank"
+               rel="noopener noreferrer">Consultar disponibilidade →</a>
         </div>
     </div>
+
+    <script>
+        document.querySelectorAll('.general-card').forEach(card => {
+            const link = card.querySelector('.general-btn');
+            if (link) {
+                card.style.cursor = 'pointer';
+                card.addEventListener('click', (e) => {
+                    if (e.target.closest('.general-btn')) return;
+                    window.open(link.href, '_blank');
+                });
+            }
+        });
+    </script>
 </section>

@@ -13,10 +13,14 @@
                 <div class="whatsapp-icon"><i class="fab fa-whatsapp"></i></div>
                 <div class="whatsapp-text"><h3>WhatsApp</h3><p>Resposta em minutos</p></div>
             </a>
-            <button id="openEmailModalBtn" class="email-card">
-                <div class="email-icon"><i class="far fa-envelope"></i></div>
-                <div class="email-text"><h3>E-mail</h3><p>Enviar uma mensagem</p></div>
-            </button>
+
+            <!-- Botão Formulário - classes renomeadas de "email-*" para "form-*" -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScO9d1cGbvyFz1TjJmBSI8CLZYSIwsuUpQMusy8YMrTO4Q9uA/viewform"
+               target="_blank" rel="noopener noreferrer"
+               class="form-card" style="text-decoration: none;">
+                <div class="form-icon"><i class="far fa-file-alt"></i></div>
+                <div class="form-text"><h3>Formulário</h3><p>Descubra o melhor curso para você</p></div>
+            </a>
         </div>
 
         <div class="info-grid">
@@ -35,8 +39,8 @@
             <div class="info-card">
                 <div class="info-icon"><i class="far fa-envelope"></i></div>
                 <div class="info-label">E-mail</div>
-                <div class="info-value">contato@</div>
-                <div class="info-sub">institutopianotiagocruz.com.br</div>
+                <div class="info-value">tiago-lincoln@</div>
+                <div class="info-sub">hotmail.com</div>
             </div>
         </div>
 
@@ -46,83 +50,10 @@
                 <a href="https://www.instagram.com/institutodepiano/" target="_blank" rel="noopener noreferrer" class="social-btn">
                     <i class="fab fa-instagram"></i> Instagram
                 </a>
-                <a href="#" class="social-btn youtube-white" onclick="alert('Canal no YouTube: em breve'); return false;">
+                <a href="https://www.youtube.com/@tiagocruz4837" target="_blank" rel="noopener noreferrer" class="social-btn youtube-white">
                     <i class="fab fa-youtube"></i> YouTube
                 </a>
             </div>
         </div>
     </div>
 </div>
-
-<!-- Ícone flutuante do WhatsApp -->
-
-<!-- Modal de e-mail -->
-<div id="emailModal" class="modal-overlay">
-    <div class="modal-container">
-        <button class="modal-close" id="closeModalBtn"><i class="fas fa-times"></i></button>
-        <div id="modalDynamicContent" class="modal-content"></div>
-    </div>
-</div>
-
-<script src="contato.js"></script>
-
-<script>
-    (function() {
-        let modalState = 'form';
-        let formData = { name: '', email: '', message: '' };
-        const modalOverlay = document.getElementById('emailModal');
-        const modalContentDiv = document.getElementById('modalDynamicContent');
-        const openBtn = document.getElementById('openEmailModalBtn');
-        const closeBtn = document.getElementById('closeModalBtn');
-
-        function renderModal() {
-            if (modalState === 'form') {
-                modalContentDiv.innerHTML = `
-                    <div class="modal-header">
-                        <div class="modal-header-icon"><i class="far fa-envelope"></i></div>
-                        <div><h3 style="font-weight:700">Enviar e-mail</h3><p style="font-size:0.7rem; color:#7F798C">contato@institutopianotiagocruz.com.br</p></div>
-                    </div>
-                    <form id="emailForm">
-                        <div class="form-group"><label>Nome completo *</label><input type="text" id="modalName" placeholder="Seu nome" required></div>
-                        <div class="form-group"><label>E-mail *</label><input type="email" id="modalEmail" placeholder="seu@email.com" required></div>
-                        <div class="form-group"><label>Mensagem *</label><textarea id="modalMessage" rows="4" placeholder="Escreva sua mensagem..." required></textarea></div>
-                        <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Enviar mensagem</button>
-                    </form>
-                `;
-                const form = document.getElementById('emailForm');
-                if (form) {
-                    if (formData.name) document.getElementById('modalName').value = formData.name;
-                    if (formData.email) document.getElementById('modalEmail').value = formData.email;
-                    if (formData.message) document.getElementById('modalMessage').value = formData.message;
-                    form.addEventListener('submit', (e) => {
-                        e.preventDefault();
-                        const name = document.getElementById('modalName').value.trim();
-                        const email = document.getElementById('modalEmail').value.trim();
-                        const message = document.getElementById('modalMessage').value.trim();
-                        if (!name || !email || !message) return alert('Preencha todos os campos.');
-                        formData = { name, email, message };
-                        modalState = 'success';
-                        renderModal();
-                    });
-                }
-            } else {
-                modalContentDiv.innerHTML = `
-                    <div class="success-message">
-                        <div class="success-icon"><i class="fas fa-paper-plane"></i></div>
-                        <h4 style="margin-bottom:0.5rem">Mensagem enviada!</h4>
-                        <p style="color:#7F798C; font-size:0.8rem;">O Prof. Tiago Cruz responderá em breve. Use o WhatsApp para resposta imediata.</p>
-                        <a href="https://wa.me/5511998765432?text=Olá%20Prof.%20Tiago!%20Tenho%20interesse" target="_blank" class="wa-link-modal"><i class="fab fa-whatsapp"></i> Falar no WhatsApp</a>
-                    </div>
-                `;
-            }
-        }
-
-        function openModal() { modalState = 'form'; renderModal(); modalOverlay.classList.add('active'); document.body.style.overflow = 'hidden'; }
-        function closeModal() { modalOverlay.classList.remove('active'); document.body.style.overflow = ''; modalState = 'form'; formData = { name: '', email: '', message: '' }; }
-
-        if (openBtn) openBtn.addEventListener('click', openModal);
-        if (closeBtn) closeBtn.addEventListener('click', closeModal);
-        if (modalOverlay) modalOverlay.addEventListener('click', (e) => { if (e.target === modalOverlay) closeModal(); });
-        document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modalOverlay.classList.contains('active')) closeModal(); });
-    })();
-</script>
