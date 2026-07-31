@@ -76,3 +76,38 @@
     margin-bottom: 0;
     color: rgba(255,255,255,0.55);
 }
+
+
+/* Estatísticas - Mobile */
+@media (max-width: 640px) {
+    .EstatisticasGrid {
+        grid-template-columns: 4fr; /* uma coluna */
+        gap: 1.5rem;
+        justify-items: center;
+    }
+
+    .EstatisticasBox {
+        flex-direction: column;      /* ícone em cima, texto embaixo */
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .statsicon {
+        margin-bottom: 0.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.1rem;
+    }
+
+    .valor {
+        font-size: 1.8rem;
+    }
+
+    .etiqueta {
+        font-size: 0.8rem;
+    }
+}
+
+/* Entre 641px e 1023px já está com 2 colunas, que é ok */

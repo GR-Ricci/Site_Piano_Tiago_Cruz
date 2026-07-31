@@ -25,7 +25,13 @@
 
 .main-class-title strong{
     color: var(--lavender);
-    font-weight: 500;
+    font-weight: 700;
+}
+
+.main-class-subtitle{
+    color: #F59E0B;
+        font-weight: 300;
+        font-size: 2rem;
 }
 
 .main-class-description {

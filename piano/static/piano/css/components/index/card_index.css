@@ -78,6 +78,16 @@
     font-weight: 400;
 }
 
+.tag-universidade{
+    color: #F59E0B;
+    font-weight: 400;
+}
+
+.tag-subtitle{
+    color: #F59E0B;
+    font-weight: 700;
+}
+
 .Tiago {
     color: #F59E0B;
     display: block;
@@ -158,4 +168,59 @@
     box-shadow: 0 6px 14px rgba(245, 158, 11, 0.25);
     font-weight: bold;
     cursor: pointer;
+}
+
+/* Melhorias para mobile no Banner */
+@media (max-width: 768px) {
+    .BannerIndex {
+        padding: 1.5rem 1rem; /* reduz padding */
+        min-height: 80vh; /* evita que fique muito alto */
+    }
+
+    .BannerText h1 {
+        width: 100%;          /* tira a largura fixa */
+        max-width: 100%;      /* garante que não ultrapasse */
+        font-size: clamp(1.8rem, 6vw, 2.8rem); /* tamanho fluido */
+    }
+
+    .bannertextp {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        padding: 0 0.5rem;
+        max-width: 100%;
+    }
+
+    .BannerButtons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .BannerInst, .BannerZap {
+        width: 100%;
+        max-width: 260px;
+        justify-content: center;
+        padding: 14px 20px;
+        font-size: 1rem;
+    }
+
+    .instituto {
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+    }
+
+    .Tiago {
+        font-size: 1.1rem;
+    }
+}
+
+/* Para telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+    .BannerText h1 {
+        font-size: 1.6rem;
+    }
+    .bannertextp {
+        font-size: 0.85rem;
+    }
 }

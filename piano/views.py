@@ -18,7 +18,7 @@ def contact(request):
 def classes(request):
     return render(request, 'piano/pages/classes.html')
 
-def usp(request):
+#def usp(request):
     return render(request, 'piano/pages/usp.html')
 
 

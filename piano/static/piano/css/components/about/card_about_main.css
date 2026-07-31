@@ -40,7 +40,7 @@
     font-weight: 700;
     letter-spacing: 2px;
     color: #F59E0B;
-     display: block;
+    display: block;
     margin-bottom: 12px;
 }
 
@@ -51,6 +51,11 @@
     line-height: 1.1;
     font-weight: 700;
     margin-bottom: 24px;
+}
+
+.tag-about{
+    color: #F59E0B;
+    font-weight: 700;
 }
 
 .about-description p {

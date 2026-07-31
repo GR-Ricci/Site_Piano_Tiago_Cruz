@@ -141,3 +141,52 @@
         font-size: 1rem;
     }
 }
+
+@media (max-width: 768px) {
+    .ParteVideo {
+        padding: 1.5rem 1rem;
+    }
+
+    .ParteVideoCabecalho {
+        margin-bottom: 1.5rem;
+    }
+
+    .ParteVideoTitulo {
+        font-size: clamp(1.4rem, 4vw, 1.8rem);
+    }
+
+    .ParteVideoInfo {
+        padding: 1rem;
+    }
+
+    .ParteVideoPlayButton {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.5rem;
+    }
+
+    .ParteVideoVideoTitulo {
+        font-size: 0.95rem;
+    }
+
+    .ParteVideoSubtitulo {
+        font-size: 0.75rem;
+    }
+}
+
+/* Telas muito pequenas (ex: smartphones em pé) */
+@media (max-width: 480px) {
+    .ParteVideoPlayButton {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.2rem;
+    }
+
+    .ParteVideoVideoTitulo {
+        font-size: 0.85rem;
+    }
+
+    .ParteVideoThumbnail {
+        border-radius: 0.75rem;
+    }
+}

@@ -63,3 +63,45 @@
         padding: 0 2rem;
     }
 }
+
+/* Mobile first: padrão já é 1 coluna (não precisa mexer) */
+
+/* Tablets: 2 colunas */
+@media (min-width: 640px) and (max-width: 1023px) {
+    .partediferenciaisgrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* Desktop: 3 colunas */
+@media (min-width: 1024px) {
+    .partediferenciaisgrid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Ajustes para mobile */
+@media (max-width: 640px) {
+    .partediferenciaisitem {
+        padding: 0 0.5rem;
+    }
+
+    .partediferenciaisitem h4 {
+        font-size: 1rem;
+    }
+
+    .partediferenciaisitem p {
+        font-size: 0.9rem;
+    }
+
+    .partediferenciaisnumero {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .partediferenciaisnumero span {
+        font-size: 0.7rem;
+    }
+}
