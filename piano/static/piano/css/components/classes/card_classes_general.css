@@ -16,7 +16,7 @@
 
 .general-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2rem;
 }
 
@@ -32,11 +32,9 @@
     height: 100%;
 }
 
-
 .general-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 35px rgba(48, 29, 89, 0.2);
-
 }
 
 .general-image-placeholder {
@@ -44,7 +42,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: #e9e1d4;
-
     width: 100%;
     height: 140px;
     border-radius: 12px;
@@ -100,7 +97,7 @@
     transform: translateX(4px);
 }
 
-/* RESPONSIVO */
+/* ===== RESPONSIVO GENERAL CLASS ===== */
 @media (max-width: 768px) {
     .general-class {
         padding: 0 1rem;
@@ -109,9 +106,11 @@
 
     .general-title {
         font-size: 1.6rem;
+        margin-bottom: 2rem;
     }
 
     .general-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 1rem;
     }
 
@@ -126,5 +125,46 @@
     .general-desc {
         min-height: 60px;
         font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .general-class {
+        padding: 0 0.5rem;
+        margin: 1.5rem auto;
+    }
+
+    .general-title {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .general-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .general-card {
+        padding: 0.8rem;
+    }
+
+    .general-image-placeholder {
+        height: 100px;
+    }
+
+    .general-name {
+        font-size: 0.95rem;
+    }
+
+    .general-desc {
+        min-height: auto;
+        font-size: 0.75rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .general-btn {
+        font-size: 0.75rem;
     }
 }

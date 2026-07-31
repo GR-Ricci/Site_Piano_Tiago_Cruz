@@ -1,55 +1,33 @@
-/*barra com statisticas*/
-
-.EstatiscasBackground{
+/* ===== ESTATÍSTICAS ===== */
+.EstatiscasBackground {
     background: #301D59;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 30px 0;
     font-family: 'Inter', sans-serif;
 }
 
-.Estatisticasbase {
+.EstatisticasGrid {
     max-width: 80rem;
     margin: 0 auto;
-    padding: 0 1.5rem;
-}
-
-.Estatisticasbase h1, h2{
-    margin: 0;
-}
-
-.EstatisticasGrid{
+    padding: 0 1rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
     justify-items: center;
-    align-items: flex-start;
+    align-items: start;
 }
 
-@media (min-width: 1024px) {
-    .EstatisticasGrid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-.EstatisticasBox{
+.EstatisticasBox {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 1rem;
-    width: clamp(200px, 21.875%, 280px);
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 240px;
 }
 
-@media (min-width: 640px) {
-    .StatItem {
-        flex-direction: row;
-        align-items: flex-start;
-        text-align: left;
-    }
-}
-
-.statsicon{
-    width: 2.75rem;
-    height: 2.75rem;
+.statsicon {
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 0.75rem;
     display: flex;
     align-items: center;
@@ -57,57 +35,97 @@
     flex-shrink: 0;
     background: rgba(255,255,255,0.1);
     color: #ffffff;
-    font-size: 1.25rem;
-    line-height: 1;
+    font-size: 1.1rem;
 }
 
-.valor{
+.valor {
     color: white;
     font-weight: 700;
-    font-size: 1.6rem;
-    line-height: 1;
+    font-size: 1.5rem;
+    line-height: 1.2;
     margin: 0;
-    font-weight: bold;
 }
 
-.etiqueta{
-    font-size: 0.875rem;
-    margin-top: 0.25rem;
+.etiqueta {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
     margin-bottom: 0;
     color: rgba(255,255,255,0.55);
 }
 
-
-/* Estatísticas - Mobile */
-@media (max-width: 640px) {
+/* Tablets (641px a 1023px): 2 colunas */
+@media (max-width: 1023px) and (min-width: 641px) {
     .EstatisticasGrid {
-        grid-template-columns: 4fr; /* uma coluna */
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
-        justify-items: center;
-    }
-
-    .EstatisticasBox {
-        flex-direction: column;      /* ícone em cima, texto embaixo */
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        max-width: 200px;
-    }
-
-    .statsicon {
-        margin-bottom: 0.5rem;
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 1.1rem;
-    }
-
-    .valor {
-        font-size: 1.8rem;
-    }
-
-    .etiqueta {
-        font-size: 0.8rem;
     }
 }
 
-/* Entre 641px e 1023px já está com 2 colunas, que é ok */
+/* Celular (até 640px): 2 colunas bem compactas */
+@media (max-width: 640px) {
+    .EstatisticasGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem 0.5rem;          /* reduz ainda mais o espaço entre itens */
+        padding: 0 0.3rem;           /* menos padding lateral */
+        max-width: 400px;            /* limita a largura total do container no celular */
+        justify-content: center;     /* centraliza o grid */
+    }
+
+    .EstatisticasBox {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 130px;            /* mais estreito para caber melhor */
+        gap: 0.2rem;
+    }
+
+    .statsicon {
+        width: 1.8rem;
+        height: 1.8rem;
+        font-size: 0.8rem;
+        margin-bottom: 0.1rem;
+    }
+
+    .valor {
+        font-size: 1.1rem;           /* menor */
+        line-height: 1.2;
+    }
+
+    .etiqueta {
+        font-size: 0.65rem;          /* menor */
+        margin-top: 0.05rem;
+    }
+}
+
+/* Celular muito pequeno (até 400px): 1 coluna horizontal */
+@media (max-width: 400px) {
+    .EstatisticasGrid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+        padding: 0 0.5rem;
+        max-width: 300px;            /* container mais estreito ainda */
+    }
+
+    .EstatisticasBox {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        max-width: 220px;
+        gap: 0.6rem;
+    }
+
+    .statsicon {
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.9rem;
+        margin-bottom: 0;
+    }
+
+    .valor {
+        font-size: 1.2rem;
+    }
+
+    .etiqueta {
+        font-size: 0.7rem;
+    }
+}
