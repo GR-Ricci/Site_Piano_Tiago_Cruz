@@ -75,15 +75,15 @@ The application is available at:
 ### Desktop Version
 
 <div style="display: flex; gap: 10px;">
-  <img src="assets/index.jpeg" width="350" alt="Homepage Desktop">
-  <img src="assets/class.jpeg" width="350" alt="Classes Desktop">
+  <img src="assets/index.jpeg" width="450" alt="Homepage Desktop">
+  <img src="assets/class.jpeg" width="450" alt="Classes Desktop">
 </div>
 
 ### Mobile Version
 
 <div style="display: flex; gap: 10px;">
-  <img src="assets/mobile-index.jpeg" width="200" alt="Mobile Homepage">
-  <img src="assets/mobile-about.jpeg" width="200" alt="Mobile About">
+  <img src="assets/mobile-index.jpeg" width="250" alt="Mobile Homepage">
+  <img src="assets/mobile-about.jpeg" width="250" alt="Mobile About">
 </div>
 ---
 
