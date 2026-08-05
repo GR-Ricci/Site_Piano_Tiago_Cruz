@@ -72,16 +72,20 @@ The application is available at:
 
 ## 📷 Screenshots
 
-## 📷 Screenshots
+### Desktop Version
 
-![Homepage Desktop](assets/index.png)
+<div style="display: flex; gap: 10px;">
+  <img src="assets/index.jpeg" width="450" alt="Homepage Desktop">
+  <img src="assets/class.jpeg" width="450" alt="Classes Desktop">
+</div>
 
-![Mobile Homepage](assets/mobile-index.png)
+### Mobile Version
 
-![Mobile About](assets/mobile-about.png)
+<div style="display: flex; gap: 10px;">
+  <img src="assets/mobile-index.jpeg" width="250" alt="Mobile Homepage">
+  <img src="assets/mobile-about.jpeg" width="250" alt="Mobile About">
+</div>
 
-![Piano Classes](assets/class.png)
----
 
 ## 📌 Future Improvements
 
