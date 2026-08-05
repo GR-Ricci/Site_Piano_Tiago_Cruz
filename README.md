@@ -82,8 +82,8 @@ The application is available at:
 ### Mobile Version
 
 <div style="display: flex; gap: 10px;">
-  <img src="assets/mobile-index.jpeg" width="250" alt="Mobile Homepage">
-  <img src="assets/mobile-about.jpeg" width="250" alt="Mobile About">
+  <img src="assets/mobile-index.png" width="200" alt="Mobile Homepage">
+  <img src="assets/mobile-about.png" width="200" alt="Mobile About">
 </div>
 
 
