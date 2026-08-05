@@ -85,7 +85,7 @@ The application is available at:
   <img src="assets/mobile-index.jpeg" width="250" alt="Mobile Homepage">
   <img src="assets/mobile-about.jpeg" width="250" alt="Mobile About">
 </div>
----
+
 
 ## 📌 Future Improvements
 
