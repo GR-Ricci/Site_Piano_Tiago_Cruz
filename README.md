@@ -8,8 +8,7 @@ Its primary goal is to provide a modern platform that showcases the institute, p
 
 Although the current version is a static website, it was built using the **Django** framework to establish a scalable foundation for future backend features, such as user authentication, content management, and database integration.
 
-The project was developed collaboratively as part of the **Web Development** course during the **3rd semester of the Computer Science program** at **Centro Universitário Barão de Mauá**.
-
+The project was developed collaboratively as part of the **Software Factory** course during the 3rd semester of the **Computer Science program** at **Centro Universitário Barão de Mauá**.
 ---
 
 ## ✨ Features
